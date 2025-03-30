@@ -1,2 +1,9 @@
-const name = prompt("이름을 입력해주세요")
-alert("안녕하세요 "+name+" 님")
+alert("회원정보를 확인해주세요!")
+
+document.querySelector("#insta").parentElement.onclick = function (click) {
+    click.preventDefault(); 
+    if (confirm("SNS로 이동하시겠습니까?")) {
+        window.location.href = click.currentTarget.href;
+    }
+};
+
