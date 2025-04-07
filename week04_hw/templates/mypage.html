@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/mypage.css' %}"/>
+    <title>마이페이지</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}">
+            <img id="logo_sookmutsa" src="{% static 'images/숙멋사 로고명 1.svg' %}"/>
+        </a>
+        <h1>마이페이지</h1>
+    </header>
+    <div>
+        <article>
+            <img id="profile" src="{% static 'images/프로필사진.svg' %}"/>
+            <section><h3>닉네임</h3> <h2>chaebin1207</h2></section>
+            <section><h3>이름</h3> <h2>{{user.first_name}}</h2></section>
+            <section><h3>이메일</h3> <h2>chaebin1207@sookmyung.ac.kr</h2></section>
+            <section><h3>전공</h3> <h2>영어영문학부</h2></section>
+            <section><h3>생년월일</h3> <h2>2004.12.07</h2></section>
+            <section><h3>취미</h3> <h2>등산, 야구 관람, 산책</h2></section>
+            <section><h3>SNS</h3> <a href="https://www.instagram.com/xxni_b?igsh=NHhiMXFxcXppMXIx&utm_source=qr">
+                <img id="insta" src="{% static 'images/icons_instagram.svg' %}"/>
+            </a></section>
+        </article>
+    </div>
+    <script src="{% static 'js/mypage.js' %}"></script>
+</body>
+</html>
