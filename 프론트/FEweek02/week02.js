@@ -5,8 +5,9 @@ const todoList = document.getElementById("todo-list");
 
 
 function addTodo(event) {
+    event.preventDefault();
 
-    const todoText = todoInput.ariaValueMax.trim()
+    const todoText = todoInput.value.trim()
 
     if (todoText !== "") {
 
@@ -25,5 +26,16 @@ function addTodo(event) {
         todoList.appendChild(todoItem);
 
         todoInput.value = "";
+
+        function handleTodoClick(event) {
+            const target = event.target;
+
+            if (target.classList.contains("delete-btn"))
+                target.parentElement.remove();
+        }
     }
+
+    todoList.addEventListener("click", handleTodoClick);
 }
+
+todoForm.addEventListener("submit", addTodo);
