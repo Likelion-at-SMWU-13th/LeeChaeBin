@@ -1,7 +1,6 @@
 div {
     width: 432px;
     height: 750px;
-    flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     margin: 20px auto;
@@ -25,7 +24,6 @@ header {
 #feed {
     width: 432px;
     height: 541px;
-    flex-shrink: 0;
     aspect-ratio: 432/541;
 }
 
@@ -62,11 +60,18 @@ span strong {
     font-size: 14px;
 }
 
+#likeCount {
+    display: block;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 span {
     font-weight: bold;
 }
 
-strong {
+#nickname {
     display: inline;
     margin-left: 10px;
     font-size: 14px;
@@ -76,4 +81,10 @@ p {
     display: inline;
     font-size: 14px;
     margin-left: 10px;
+}
+
+#look {
+    background-color: #ffffff;
+    border: none;
+    color: #949597;
 }
