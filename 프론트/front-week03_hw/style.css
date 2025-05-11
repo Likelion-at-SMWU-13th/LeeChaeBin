@@ -1,0 +1,87 @@
+body {
+    background-color: #ebebeb;    
+  }
+
+
+  #searchBtn {
+    background-color: #E08D4C;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 8px;
+  }
+
+  #input {
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+  }
+
+  .card-singer {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+
+  }
+
+  .card-number {
+    font-size: 0.8rem;
+
+  }
+
+  .card-composer {
+    font-size: 0.8rem;
+    
+
+  }
+
+  .card-lyricist {
+    font-size: 0.8rem;
+
+  }
+
+  .card-release {
+    font-size: 0.8rem;
+
+  }
+
+  .row {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .row p {
+    margin: 0.2rem 0;
+    flex: 1 1 45%;
+}
+
+
+
