@@ -17,6 +17,11 @@ function App() {
       <img src={googleLogo} />
       <SearchBox />
       <Shortcut1 />
+      <Shortcut2 />
+      <Shortcut3 />
+      <Shortcut4 />
+      <Shortcut5 />
+      <Shortcut6 />
     </>
   );
 }
