@@ -7,7 +7,7 @@ const InputBox = styled.div`
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  width: 550px;
+  width: 700px;
   height: 45px;
   border: 1px solid #dfe1e5;
   border-radius: 24px;

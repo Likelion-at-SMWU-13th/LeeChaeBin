@@ -5,6 +5,9 @@ import Apps from "../assets/Apps_icon.png";
 import styled from "styled-components";
 
 const Card = styled.div`
+  position: absolute;
+  top: 12px;
+  right: 24px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
