@@ -1,0 +1,84 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "title": "안녕이란 말도 함께 (Hope to be like you)",
+      "artist": "WOODZ",
+      "genre": "rock",
+      "release": "2022.05.04",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/007/524/7524225.jpg?type=r360Fll&v=20230331101510"
+    },
+    {
+      "id": 2,
+      "title": "Congratulations",
+      "artist": "DAY6",
+      "genre": "rock",
+      "release": "2015.09.07",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/000/581/581568.jpg?type=r480Fll&v=20230331122207"
+    },
+    {
+      "id": 3,
+      "title": "주인공 (Irreplaceable)",
+      "artist": "NCT DREAM",
+      "genre": "dance",
+      "release": "2021.05.10",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/005/802/5802115.jpg?type=r480Fll&v=20231211171414"
+    },
+    {
+      "id": 4,
+      "title": "불",
+      "artist": "유다빈밴드",
+      "genre": "rock",
+      "release": "2024.10.21",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/032/219/32219657.jpg?type=r480Fll&v=20241021113854"
+    },
+    {
+      "id": 5,
+      "title": "주인공 (Irreplaceable)",
+      "artist": "NCT DREAM",
+      "genre": "dance",
+      "release": "2021.05.10",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/005/802/5802115.jpg?type=r480Fll&v=20231211171414"
+    },
+    {
+      "id": 6,
+      "title": "너에게 닿기를",
+      "artist": "10CM",
+      "genre": "rock",
+      "release": "2025.03.06",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/033/121/33121948.jpg?type=r480Fll&v=20250610153450"
+    },
+    {
+      "id": 7,
+      "title": "Igloo",
+      "artist": "KISS OF LIFE",
+      "genre": "rap",
+      "release": "2024.10.15",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/032/166/32166646.jpg?type=r480Fll&v=20241115113517"
+    },
+    {
+      "id": 8,
+      "title": "Antifreeze",
+      "artist": "검정치마",
+      "genre": "indie",
+      "release": "2010.03.18",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/000/170/170492.jpg?type=r480Fll&v=20230331114349"
+    },
+    {
+      "id": 9,
+      "title": "NO PAIN",
+      "artist": "실리카겔",
+      "genre": "indie",
+      "release": "2022.08.25",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/007/983/7983784.jpg?type=r480Fll&v=20250106195511"
+    },
+    {
+      "id": 10,
+      "title": "딱 10CM만",
+      "artist": "10CM, BIG Naughty(서동현)",
+      "genre": "R&B",
+      "release": "2022.09.25",
+      "cover": "https://musicmeta-phinf.pstatic.net/album/008/095/8095694.jpg?type=r480Fll&v=20240222005506"
+    }
+  ]
+}
