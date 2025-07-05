@@ -1,0 +1,95 @@
+.guestbook-container {
+  max-width: 400px;
+  margin: 2.5rem auto;
+  padding: 24px 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.07);
+}
+
+.guestbook-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.guestbook-input {
+  flex: 1 1 0;
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.guestbook-input:focus {
+  border-color: #4683e7;
+  background: #f3f7fd;
+}
+
+.guestbook-btn {
+  padding: 8px 40px;
+  font-size: 15px;
+  background: #4683e7;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.guestbook-btn:hover {
+  background: #305bb8;
+}
+
+.guestbook-list {
+  padding: 0;
+  margin: 0;
+}
+
+.guestbook-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.guestbook-link {
+  color: #222;
+}
+
+.guestbook-link:hover {
+  color: #4683e7;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  color: #305bb8;
+  text-align: center;
+}
+
+.guestbook-detail-container {
+  padding: 40px 20px;
+  max-width: 400px;
+  margin: 3rem auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.07);
+  text-align: center;
+}
+
+.guestbook-backbtn {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 8px 22px;
+  border-radius: 8px;
+  color: #4683e7;
+  background: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+.guestbook-backbtn:hover {
+  background: #7da2f2;
+}
