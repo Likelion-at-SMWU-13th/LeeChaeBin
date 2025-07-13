@@ -16,7 +16,7 @@ const DetailPage = () => {
         console.log(response);
         setDetail(response.data);
       })
-      .catch(() => {
+      .catch((error) => {
         console.log(error);
       });
   };
@@ -28,7 +28,7 @@ const DetailPage = () => {
         alert("삭제가 완료되었습니다.");
         navigate("/");
       })
-      .catch(() => {
+      .catch((error) => {
         console.log(error);
       });
   };
