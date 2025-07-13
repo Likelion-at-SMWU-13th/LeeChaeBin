@@ -16,7 +16,19 @@ const DetailPage = () => {
         console.log(response);
         setDetail(response.data);
       })
-      .catch((error) => {
+      .catch(() => {
+        console.log(error);
+      });
+  };
+
+  const deleteComment = (id) => {
+    axios
+      .delete(`http://127.0.0.1:8000/entries/${id}/`)
+      .then(() => {
+        alert("삭제가 완료되었습니다.");
+        navigate("/");
+      })
+      .catch(() => {
         console.log(error);
       });
   };
@@ -32,8 +44,12 @@ const DetailPage = () => {
         <Time>{detail.timestamp}</Time>
         <Comment>{detail.comment}</Comment>
         <BtnWrapper>
-          <Button txt="수정" fontSize="1.875rem" onBtnClick={editComment} />
-          <Button txt="삭제" fontSize="1.875rem" onBtnClick={deleteComment} />
+          <Button txt="수정" fontSize="1.875rem" />
+          <Button
+            txt="삭제"
+            fontSize="1.875rem"
+            onBtnClick={() => deleteComment(id)}
+          />
         </BtnWrapper>
       </DetailWrapper>
     </Wrapper>
