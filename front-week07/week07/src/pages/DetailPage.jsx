@@ -32,8 +32,8 @@ const DetailPage = () => {
         <Time>{detail.timestamp}</Time>
         <Comment>{detail.comment}</Comment>
         <BtnWrapper>
-          <Button txt="수정" fontSize="1.875rem" />
-          <Button txt="삭제" fontSize="1.875rem" />
+          <Button txt="수정" fontSize="1.875rem" onBtnClick={editComment} />
+          <Button txt="삭제" fontSize="1.875rem" onBtnClick={deleteComment} />
         </BtnWrapper>
       </DetailWrapper>
     </Wrapper>
