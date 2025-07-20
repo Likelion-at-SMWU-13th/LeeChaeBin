@@ -26,7 +26,7 @@ const Redirection = () => {
       }
     ).then((res) => {
       //요청에 대한 응답 처리 부분
-      const data = res.json();
+      const data = res.json(); //응답을 json 객체로 바꿔줍니다.
       data.then((data) => {
         localStorage.setItem("accessToken", data.access_token); //로컬스토리지에 access token을 저장합니다.
         navigate("/greeting"); //토큰 저장 후 greeting 페이지로 이동합니다.
