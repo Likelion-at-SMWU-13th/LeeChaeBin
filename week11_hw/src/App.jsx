@@ -1,7 +1,5 @@
-import "./App.css";
+import Weather from "../components/weather";
 
-function App() {
-  return <></>;
+export default function App() {
+  return <Weather />;
 }
-
-export default App;
