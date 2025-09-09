@@ -2,8 +2,8 @@ import useTodoStore from "../store/store";
 import * as S from "../styles/styled";
 
 function TodoItem({ todo }) {
-  const removeTodo = useTodoStore((s) => S.removeTodo);
-  const toggleTodo = useTodoStore((s) => S.toggleTodo);
+  const removeTodo = useTodoStore((s) => s.removeTodo);
+  const toggleTodo = useTodoStore((s) => s.toggleTodo);
 
   return (
     <S.ItemRow>
