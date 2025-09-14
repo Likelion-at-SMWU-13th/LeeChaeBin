@@ -1,21 +1,27 @@
 import { create } from "zustand";
 
 const usePlaylistStore = create((set) => ({
-  playlists: [],
+  playlist: [],
   addPlaylist: (song) => {
     const title = song.title.trim();
+    const artist = song.artist.trim();
+    const albumImg = song.albumImg.trim();
+
     if (!title) return;
     set((state) => ({
-      playlists: [...state.playlists, { id: Date.now(), title, liked: false }],
+      playlist: [
+        ...state.playlist,
+        { id: Date.now(), title, artist, albumImg, liked: false },
+      ],
     }));
   },
   removePlaylist: (id) =>
     set((state) => ({
-      playlists: state.playlists.filter((song) => song.id !== id),
+      playlist: state.playlist.filter((song) => song.id !== id),
     })),
   togglePlaylist: (id) =>
     set((state) => ({
-      playlists: state.playlists.map((song) =>
+      playlist: state.playlist.map((song) =>
         song.id === id ? { ...song, liked: !song.liked } : song
       ),
     })),
