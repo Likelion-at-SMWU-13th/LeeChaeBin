@@ -108,7 +108,6 @@ export const PlaylistBox = styled.ul`
   box-shadow: 0 8px 24px rgba(46, 71, 150, 0.08);
   border: 1px solid #eef1f6;
   overflow-y: auto;
-  overflow-x: hidden;
 `;
 
 export const Empty = styled.p`
@@ -119,7 +118,6 @@ export const Empty = styled.p`
 `;
 
 export const PlaylistCard = styled.li`
-  width: 36rem;
   height: 5.625rem;
   flex-shrink: 0;
   display: flex;
