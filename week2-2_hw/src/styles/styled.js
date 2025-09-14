@@ -23,7 +23,6 @@ export const SongsContainer = styled.div`
 `;
 
 export const SongCard = styled.div`
-  width: 50rem;
   height: 5.625rem;
   flex-shrink: 0;
   display: flex;
