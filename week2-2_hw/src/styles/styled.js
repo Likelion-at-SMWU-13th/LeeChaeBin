@@ -37,11 +37,12 @@ export const SongAlbum = styled.div`
   align-items: center;
 `;
 
-export const Rank = styled.p`
-  padding: 24px;
+export const Rank = styled.div`
+  width: 38px;
   font-weight: 600;
   font-size: 24px;
   margin: 0;
+  text-align: center;
 `;
 
 export const AlbumImg = styled.img`
