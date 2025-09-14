@@ -38,7 +38,7 @@ export const SongAlbum = styled.div`
 `;
 
 export const Rank = styled.div`
-  width: 38px;
+  width: 50px;
   font-weight: 600;
   font-size: 24px;
   margin: 0;
@@ -50,7 +50,7 @@ export const AlbumImg = styled.img`
   height: 4.6875rem;
   flex-shrink: 0;
   border-radius: 10px;
-  margin-left: 15px;
+  margin-left: 28px;
 `;
 
 export const SongInfo = styled.div`
