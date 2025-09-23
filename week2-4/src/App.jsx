@@ -1,7 +1,28 @@
+import { useQuery } from "@tanstack/react-query";
 import "./App.css";
 
 function App() {
-  return <>tanstack query 실습!</>;
+  async function getPosts() {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+    return await response.json();
+  }
+  const { data: postData } = useQuery({
+    queryKey: ["posts"],
+    queryFn: getPosts,
+  });
+  console.log("postsData", postData);
+
+  const posts = postData ?? [];
+
+  return (
+    <div>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default App;
