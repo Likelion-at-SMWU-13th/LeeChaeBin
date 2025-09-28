@@ -1,4 +1,4 @@
-import { createPost, updatePost, deletePost } from "./axios";
+import { createPost, updatePost, deletePost, createUser } from "./axios";
 import { getPost } from "./axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
@@ -35,6 +35,15 @@ export const useDeletePost = () => {
     onSuccess: () => {
       alert("게시글이 삭제되었습니다.");
       queryClient.invalidateQueries({ queryKey: ["postList"] });
+    },
+  });
+};
+
+export const useCreateUser = () => {
+  return useMutation({
+    mutationFn: ({ username, password }) => createUser({ username, password }),
+    onSuccess: () => {
+      alert("환영합니다!");
     },
   });
 };
