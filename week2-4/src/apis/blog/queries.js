@@ -4,6 +4,7 @@ import {
   deletePost,
   createUser,
   readUser,
+  updateUser,
 } from "./axios";
 import { getPost } from "./axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -61,5 +62,13 @@ export const useReadUser = (userId) => {
 
     staleTime: 30 * 1000,
     retry: 3,
+  });
+};
+
+export const useUpdateUser = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ userId, userName }) => updateUser({ userId, userName }),
+    onSuccess: queryClient.invalidateQueries({ queryKey: ["myPage"] }),
   });
 };
