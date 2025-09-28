@@ -1,4 +1,10 @@
-import { createPost, updatePost, deletePost, createUser } from "./axios";
+import {
+  createPost,
+  updatePost,
+  deletePost,
+  createUser,
+  readUser,
+} from "./axios";
 import { getPost } from "./axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
@@ -45,5 +51,15 @@ export const useCreateUser = () => {
     onSuccess: () => {
       alert("환영합니다!");
     },
+  });
+};
+
+export const useReadUser = (userId) => {
+  return useQuery({
+    queryKey: ["userId", userId],
+    queryFn: () => readUser(userId),
+
+    staleTime: 30 * 1000,
+    retry: 3,
   });
 };
