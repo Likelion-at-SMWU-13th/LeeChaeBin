@@ -1,4 +1,12 @@
-import { createPost, updatePost, deletePost } from "./axios";
+import {
+  createPost,
+  updatePost,
+  deletePost,
+  createUser,
+  readUser,
+  updateUser,
+  deleteUser,
+} from "./axios";
 import { getPost } from "./axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
@@ -35,6 +43,45 @@ export const useDeletePost = () => {
     onSuccess: () => {
       alert("게시글이 삭제되었습니다.");
       queryClient.invalidateQueries({ queryKey: ["postList"] });
+    },
+  });
+};
+
+export const useCreateUser = () => {
+  return useMutation({
+    mutationFn: ({ username, password }) => createUser({ username, password }),
+    onSuccess: () => {
+      alert("환영합니다!");
+    },
+  });
+};
+
+export const useReadUser = (userId) => {
+  return useQuery({
+    queryKey: ["userId", userId],
+    queryFn: () => readUser(userId),
+
+    staleTime: 30 * 1000,
+    retry: 3,
+    gcTime: 10 * 60 * 1000,
+  });
+};
+
+export const useUpdateUser = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ userId, userName }) => updateUser({ userId, userName }),
+    onSuccess: queryClient.invalidateQueries({ queryKey: ["myPage"] }),
+  });
+};
+
+export const useDeleteUser = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (userId) => deleteUser(userId),
+    onSuccess: () => {
+      alert("회원정보가 삭제되었습니다");
+      queryClient.invalidateQueries({ queryKey: ["user"] });
     },
   });
 };
