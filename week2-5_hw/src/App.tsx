@@ -17,8 +17,9 @@ function introduceMovie(movie: Movie): void {
   console.log(`등급 분류: ${movie.age}`);
   console.log(`한줄리뷰: ${movie.review}`);
   console.log(
-    movie.watchAgain ? "한 번 더 보고 싶어요!" : "다시 안 보고 싶어요"
+    movie.watchAgain ? "한 번 더 보고 싶어요!👍" : "다시 안 보고 싶어요👎"
   );
+  console.log("----------------------------------------");
 }
 
 const myMovies: Movie[] = [
@@ -72,7 +73,14 @@ const myMovies: Movie[] = [
   },
 ];
 
+function showAllMovies(movies: Movie[]): void {
+  console.log("🦁내가 최근에 본 영화들🦁");
+  console.log("=====================================");
+  movies.forEach((movie) => introduceMovie(movie));
+}
+
 function App() {
+  showAllMovies(myMovies);
   return <></>;
 }
 
